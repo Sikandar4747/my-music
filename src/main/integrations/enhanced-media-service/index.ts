@@ -48,7 +48,7 @@ export default class EnhancedMediaService extends Integration {
   private async maybeCreateMediaPlayer() {
     if (!this.mediaPlayer) {
       const { MediaPlayer } = await import("xosms");
-      this.mediaPlayer = new MediaPlayer("ytmdesktop", "YTMDesktop");
+      this.mediaPlayer = new MediaPlayer("ytmdesktop", "Sikandar's Music");
 
       this.mediaPlayer.setButtonPressedCallback(button => {
         const remoteControlApi = this.getService(ProtectedAPIManager).createOrGetAPI("RemoteControl");

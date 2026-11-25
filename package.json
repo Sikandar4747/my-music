@@ -1,14 +1,13 @@
 {
-  "name": "youtube-music-desktop-app",
-  "productName": "YouTube Music Desktop App",
+  "name": "sikandars-music",
+  "productName": "Sikandar's Music",
   "version": "2.1.0",
   "private": true,
-  "description": "An unofficial cross platform desktop app for YouTube Music",
+  "description": "Sikandar's Music - an unofficial cross platform desktop app for YouTube Music (based on YTMDesktop)",
   "keywords": [],
   "license": "GPL-3.0-only",
   "author": {
-    "name": "NovusTheory",
-    "email": "novustheory@gmail.com"
+    "name": "Sikandar"
   },
   "type": "commonjs",
   "main": ".vite/main/index.cjs",

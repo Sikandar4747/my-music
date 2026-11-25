@@ -11,7 +11,7 @@ const ytmViewLoadingStatusMessage = computed(() => {
     case YTMViewStatus.Loading:
       return "Loading YouTube Music...";
     case YTMViewStatus.Hooking:
-      return "Waiting for YTMDesktop hooks...";
+      return "Waiting for Sikandar's Music hooks...";
     case YTMViewStatus.Ready:
       return "Ready";
     default:

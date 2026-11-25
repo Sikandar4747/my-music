@@ -82,7 +82,7 @@ export default class WatchDog extends Service {
           `${error.stack}`;
 
         if (!app.isReady()) {
-          dialog.showErrorBox(`YTMDesktop Crashed`, `Application crashed before ready\n\n${dialogMessage}`);
+          dialog.showErrorBox(`Sikandar's Music Crashed`, `Application crashed before ready\n\n${dialogMessage}`);
         } else {
           const options = ["Copy to Clipboard and Exit", "Exit"];
           if (!app.isPackaged) {
@@ -91,7 +91,7 @@ export default class WatchDog extends Service {
 
           result = dialog.showMessageBoxSync({
             title: "Error",
-            message: "YTMDesktop Crashed",
+            message: "Sikandar's Music Crashed",
             detail: dialogMessage,
             type: "error",
             buttons: options
@@ -99,7 +99,7 @@ export default class WatchDog extends Service {
 
           // Copy to Clipboard
           if (result === 0 || result === 2) {
-            clipboard.writeText(`YTMDesktop Crashed\n\n${dialogMessage}`);
+            clipboard.writeText(`Sikandar's Music Crashed\n\n${dialogMessage}`);
           }
         }
 

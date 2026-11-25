@@ -11,7 +11,7 @@ import path from "node:path";
 
 const config: ForgeConfig = {
   packagerConfig: {
-    executableName: "youtube-music-desktop-app",
+    executableName: "sikandars-music",
     icon: "src/assets/icons/ytmd",
     extraResource: [
       "src/assets/icons/tray.ico",
@@ -28,7 +28,7 @@ const config: ForgeConfig = {
     ],
     protocols: [
       {
-        name: "YTMDesktop",
+        name: "Sikandar's Music",
         schemes: ["ytmd"]
       }
     ],

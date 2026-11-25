@@ -40,7 +40,7 @@ function openMiniplayer() {
     :has-settings-button="isMainWindow"
     has-minimize-button
     has-maximize-button
-    title="YTMDesktop"
+    title="Sikandar's Music"
     :icon-file="logo"
   >
     <template #app-buttons>

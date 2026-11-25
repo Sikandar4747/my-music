@@ -774,10 +774,10 @@ function stepLastFMAuth() {
             :src="logo"
           >
           <h2 class="app-name">
-            YTMDesktop
+            Sikandar's Music
           </h2>
           <p class="made-by">
-            Made by YTMDesktop Team
+            Made by Sikandar · Based on YTMDesktop
           </p>
           <template v-if="!autoUpdaterDisabled">
             <button
@@ -838,13 +838,13 @@ function stepLastFMAuth() {
           </span>
           <div class="links">
             <a
-              href="https://github.com/ytmdesktop/ytmdesktop"
+              href="https://github.com/Sikandar4747/my-music"
               target="_blank"
             >GitHub</a>
             <a
-              href="https://ytmdesktop.github.io/"
+              href="https://github.com/ytmdesktop/ytmdesktop"
               target="_blank"
-            >Website</a>
+            >Original project</a>
           </div>
         </div>
       </div>

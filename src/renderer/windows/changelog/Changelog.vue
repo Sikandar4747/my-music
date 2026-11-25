@@ -14,7 +14,7 @@ const appVersion = await window.ytmd.getAppVersion();
 <template>
   <div class="changelog-container">
     <h1 class="updated-header">
-      YTMDesktop has Updated!
+      Sikandar's Music has Updated!
     </h1>
     <h2 class="app-version">
       {{ releaseMetadata.name }}

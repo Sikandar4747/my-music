@@ -87,7 +87,7 @@ log.info("Application launched");
 app.enableSandbox();
 
 // appMenu allows for some basic windows management, editMenu allow for copy and paste shortcuts on MacOS
-const template: MenuItemConstructorOptions[] = [{ role: "appMenu", label: "YTMDesktop" }, { role: "editMenu" }];
+const template: MenuItemConstructorOptions[] = [{ role: "appMenu", label: "Sikandar's Music" }, { role: "editMenu" }];
 const builtMenu = process.platform === "darwin" ? Menu.buildFromTemplate(template) : null; // null for performance https://www.electronjs.org/docs/latest/tutorial/performance#8-call-menusetapplicationmenunull-when-you-do-not-need-a-default-menu
 Menu.setApplicationMenu(builtMenu);
 
@@ -366,7 +366,7 @@ app.on("ready", async () => {
       }
     });
     settingsWindow.setWindowOpenHandler(details => {
-      if (details.url === "https://github.com/ytmdesktop/ytmdesktop" || details.url === "https://ytmdesktop.github.io/") {
+      if (details.url === "https://github.com/Sikandar4747/my-music" || details.url === "https://github.com/ytmdesktop/ytmdesktop") {
         shell.openExternal(details.url);
       }
 
@@ -491,7 +491,7 @@ app.on("ready", async () => {
   tray = new Tray(getTrayIconPath());
   trayContextMenu = Menu.buildFromTemplate([
     {
-      label: "YTMDesktop",
+      label: "Sikandar's Music",
       type: "normal",
       enabled: false
     },
@@ -550,7 +550,7 @@ app.on("ready", async () => {
       }
     }
   ]);
-  tray.setToolTip("YTMDesktop");
+  tray.setToolTip("Sikandar's Music");
   tray.setContextMenu(trayContextMenu);
   tray.on("click", () => {
     mainWindow.showAndFocus();
@@ -577,12 +577,12 @@ app.on("ready", async () => {
         const unsetFlags = setupFlagNames.filter(key => (setupFlags & YTMViewSetupCompletionFlags[key]) === 0);
 
         const dialogMessage =
-          `Features from YTMDesktop may not be present or function correctly\n\nThis usually means there's a bug and a bug report should be filed on the GitHub\n\nHook log:\n${setFlags.map(flag => `    ${flag}... OK\n`).join("")}${unsetFlags.map(flag => `    ${flag}... FAIL\n`).join("")}\n` +
+          `Features from Sikandar's Music may not be present or function correctly\n\nThis usually means there's a bug and a bug report should be filed on the GitHub\n\nHook log:\n${setFlags.map(flag => `    ${flag}... OK\n`).join("")}${unsetFlags.map(flag => `    ${flag}... FAIL\n`).join("")}\n` +
           `${hookError?.stack}`;
         dialog
           .showMessageBox({
             title: "Hook Error",
-            message: "YTMDesktop could not hook YouTube Music",
+            message: "Sikandar's Music could not hook YouTube Music",
             detail: dialogMessage,
             type: "warning",
             buttons: ["Copy to Clipboard and I understand", "I understand"]

@@ -141,7 +141,7 @@ export default class LastFMClient {
         body: new URLSearchParams(body),
         signal: AbortSignal.timeout(15 * 1000),
         headers: {
-          "User-Agent": `YTMDesktop/${app.getVersion()} (https://github.com/ytmdesktop/ytmdesktop)`
+          "User-Agent": `SikandarsMusic/${app.getVersion()} (https://github.com/Sikandar4747/my-music)`
         }
       });
 
